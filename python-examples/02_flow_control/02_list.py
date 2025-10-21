@@ -18,12 +18,50 @@ print(fruits)  # Output: ['apple', 'blueberry', 'cherry']
 fruits.append("date")
 print(fruits)  # Output: ['apple', 'blueberry', 'cherry', 'date']
 
+# Insert value at specific index
+fruits.insert(1, "banana")
+print(fruits)  # Output: ['apple', 'banana', 'blueberry', 'cherry', 'date']
+
 # Removing elements from the list
 fruits.remove("cherry")
-print(fruits)  # Output: ['apple', 'blueberry', 'date']
+print(fruits)  # Output: ['apple', 'banana', 'blueberry', 'date']
 
 # List length
-print(len(fruits))  # Output: 3
+print(len(fruits))  # Output: 4
+
+# Extend a list with another list => this method adds each elemento at the end of the list
+more_fruits = ["elderberry", "fig", "grape"]
+fruits.extend(more_fruits)
+print(
+    fruits
+)  # Output: ['apple', 'banana', 'blueberry', 'date', 'elderberry', 'fig', 'grape']
+
+# Delete a Index from a list using pop()
+fruits.pop(2)
+print(fruits)  # Output: ['apple', 'banana', 'date', 'elderberry', 'fig', 'grape']
+
+# Delete a Index from a list using del => best practice is when you need to remove a range of elements
+del fruits[3]
+print(fruits)  # Output: ['apple', 'banana', 'date', 'fig', 'grape']
+## Range delete example
+del fruits[1:3]
+print(fruits)  # Output: ['apple', 'fig', 'grape']
+
+# Delete all elements from a list
+fruits.clear()
+print(fruits)  # Output: []
+
+# Order list elements SORT => modifies the original list
+numbers = [5, 2, 9, 1, 5, 6]
+numbers.sort()
+print(numbers)  # Output: [1, 2, 5, 5, 6, 9]
+numbers.sort(reverse=True)
+print(numbers)  # Output: [9, 6, 5, 5, 2, 1]
+## SORT without modifying the original list using sorted()
+unsorted_numbers = [3, 8, 4, 2, 7]
+sorted_numbers = sorted(unsorted_numbers)
+print(unsorted_numbers)  # Output: [3, 8, 4, 2, 7]
+print(sorted_numbers)  # Output: [2, 3, 4, 7, 8]
 
 # User input
 new_fruit = input("Enter a new fruit: ")
