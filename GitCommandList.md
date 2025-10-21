@@ -14,3 +14,5 @@
 - `git log`: Muestra el historial de commits del repositorio.
 - `git diff`: Muestra las diferencias entre los archivos modificados y el último commit.
 - `git reset --hard`: Revierte el repositorio al último commit, descartando todos los cambios no confirmados.
+- `git stash`: Guarda temporalmente los cambios no confirmados para limpiarlos del área de trabajo.
+  - `git stash pop`: Restaura los cambios guardados en el stash y los elimina del stash.

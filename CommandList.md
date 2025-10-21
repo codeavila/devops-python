@@ -45,8 +45,18 @@ Normalmente son estos los que utilizo en mi dia a día, pero hay muchos más dis
 ```
 Ejemplo: `0 2 * * 1 /ruta/al/script.sh` ejecuta el script todos los lunes a las 2:00 AM.
 
-- journalctl -u [nombre_servicio]: Muestra los logs de un servicio gestionado por systemd.
-- systemctl status [nombre_servicio]: Muestra el estado actual de un servicio gestionado por systemd.
-- systemctl start [nombre_servicio]: Inicia un servicio gestionado por systemd.
-- systemctl stop [nombre_servicio]: Detiene un servicio gestionado por systemd.
-- systemctl restart [nombre_servicio]: Reinicia un servicio gestionado por systemd.
+- `journalctl -u [nombre_servicio]`: Muestra los logs de un servicio gestionado por systemd.
+- `systemctl status [nombre_servicio]`: Muestra el estado actual de un servicio gestionado por systemd.
+- `systemctl start [nombre_servicio]`: Inicia un servicio gestionado por systemd.
+- `systemctl stop [nombre_servicio]`: Detiene un servicio gestionado por systemd.
+- `systemctl restart [nombre_servicio]`: Reinicia un servicio gestionado por systemd.
+- `ps aux | grep [nombre_proceso]`: Muestra información sobre todos los procesos en ejecución.
+- `lsof -i :[puerto]`: Muestra los procesos que están utilizando el puerto especificado.
+- `chmod +x [archivo]`: Otorga permisos de ejecución a un archivo.
+- `iptables -L`: Muestra las reglas actuales del firewall configurado con iptables.
+- `tar -cvf [archivo.tar.gz] [directorio o archivo]`: Crea un archivo comprimido en formato tar.gz del directorio o archivo especificado.
+- `tar -xvf [archivo.tar.gz]`: Extrae el contenido de un archivo comprimido en formato tar.gz.
+  - `z flag`: Indica que el archivo está comprimido con gzip, pero es mejor que "tar" lo detecte automáticamente, asi que no es "necesario" usarla. Ejemplo: `tar -xzvf [archivo.tar.gz]`.
+- `unzip [archivo.zip]`: Extrae el contenido de un archivo comprimido en formato zip.
+- `ssh [usuario]@[dirección_ip o dominio]`: Establece una conexión SSH con un servidor remoto.
+- `scp [archivo] [usuario]@[dirección_ip o dominio]:[ruta_destino]`: Copia un archivo a un servidor remoto utilizando SCP.
