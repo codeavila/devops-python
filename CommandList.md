@@ -45,3 +45,8 @@ Normalmente son estos los que utilizo en mi dia a día, pero hay muchos más dis
 ```
 Ejemplo: `0 2 * * 1 /ruta/al/script.sh` ejecuta el script todos los lunes a las 2:00 AM.
 
+- journalctl -u [nombre_servicio]: Muestra los logs de un servicio gestionado por systemd.
+- systemctl status [nombre_servicio]: Muestra el estado actual de un servicio gestionado por systemd.
+- systemctl start [nombre_servicio]: Inicia un servicio gestionado por systemd.
+- systemctl stop [nombre_servicio]: Detiene un servicio gestionado por systemd.
+- systemctl restart [nombre_servicio]: Reinicia un servicio gestionado por systemd.
