@@ -51,6 +51,8 @@ print(matrix)  # Output: [[1, 2, 3], [4, 5, 6], [7, 88, 9]]
 Cheatsheet of List Operations:
 List last element: list[-1]
 List slicing: list[start:end]
+List slicing: list[:end]
+List slicing: list[start:]
 Add element: list.append(element)
 Remove element: list.remove(element)
 Get length: len(list)
@@ -59,6 +61,8 @@ Get length: len(list)
 sample_list = [10, 20, 30, 40, 50]
 print(sample_list[-1])  # Output: 50
 print(sample_list[1:4])  # Output: [20, 30, 40]
+print(sample_list[:3])  # Output: [10, 20, 30]
+print(sample_list[2:])  # Output: [30, 40, 50]
 sample_list.append(60)
 print(sample_list)  # Output: [10, 20, 30, 40, 50, 60]
 sample_list.remove(30)
@@ -74,3 +78,55 @@ print(sample_matrix)  # Output: [[1, 2], [3, 4], [5, 6], [7, 8]]
 sample_matrix.remove([3, 4])
 print(sample_matrix)  # Output: [[1, 2], [5, 6], [7, 8]]
 print(len(sample_matrix))  # Output: 3
+
+"""
+Copy a list before modifying it to avoid changing the original list.
+"""
+original_list = [1, 2, 3]
+copied_list = original_list.copy()
+copied_list.append(4)
+print("Original List:", original_list)  # Output: [1, 2, 3]
+print("Copied List:", copied_list)  # Output: [1, 2,3, 4]
+
+# Second way to copy a list using slicing
+sliced_list = original_list[:]
+sliced_list.append(5)
+print("Original List:", original_list)  # Output: [1, 2, 3]
+print("Sliced List:", sliced_list)  # Output: [1, 2, 3, 5]
+
+"""
+List Slicing with Step:
+original_list = [start:end:step]
+start => starting index (inclusive)
+end => ending index (exclusive)
+step => step size (optional, default is 1) => skips elements based on step size
+Example: original_list[0:5:2] => gets elements from index 0 to 4, skipping every second element
+"""
+# Example of slicing with step
+example_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+sliced_with_step = example_list[0:10:2]
+print(sliced_with_step)  # Output: [0, 2, 4, 6, 8]
+
+
+"""
+Cheat reverse a list using slicing:
+reversed_list = original_list[::-1]
+"""
+# Example of reversing a list
+numbers = [1, 2, 3, 4, 5]
+reversed_numbers = numbers[::-1]
+print(reversed_numbers)  # Output: [5, 4, 3, 2, 1]
+
+
+"""
+Contact List Elements:
+"""
+# Example of concatenating lists
+numbers = [1, 2, 3]
+second_numbers = [4, 5, 6]
+combined = numbers + second_numbers
+print(combined)  # Output: [1, 2, 3, 4, 5, 6]
+
+# Short way using +=
+numbers += second_numbers
+print(numbers)  # Output: [1, 2, 3, 4, 5, 6]
