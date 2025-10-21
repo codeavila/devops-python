@@ -1,0 +1,16 @@
+- `git init`: Inicializa un nuevo repositorio Git en el directorio actual.
+- `git clone [url]`: Clona un repositorio remoto desde la URL especificada.
+- `git status`: Muestra el estado actual del repositorio, incluyendo archivos modificados, añadidos o eliminados.
+- `git add [archivo o .]`: Añade archivos específicos o todos los archivos modificados al área de preparación (staging area).
+- `git commit -m "[mensaje]"`: Crea un nuevo commit con los cambios añadidos al área de preparación y un mensaje descriptivo.
+- `git push [remoto] [rama]`: Sube los commits locales a un repositorio remoto en la rama especificada.
+- `git pull [remoto] [rama]`: Descarga y fusiona los cambios desde un repositorio remoto en la rama especificada.
+- `git branch`: Muestra una lista de las ramas locales en el repositorio.
+- `git checkout -b [nombre_rama]`: Crea y cambia a una nueva rama con el nombre especificado.
+- git checkout [nombre_rama]`: Cambia a la rama especificada.
+  - git switch [nombre_rama]`: Cambia a la rama especificada (alternativa moderna a git checkout).
+- git merge [nombre_rama] --ff --no-commit`: Fusiona la rama especificada en la rama actual utilizando un fast-forward sin crear un commit de fusión automáticamente.
+  - git merge --abort`: Cancela una fusión en curso y restaura el estado anterior.
+- `git log`: Muestra el historial de commits del repositorio.
+- `git diff`: Muestra las diferencias entre los archivos modificados y el último commit.
+- `git reset --hard`: Revierte el repositorio al último commit, descartando todos los cambios no confirmados.
