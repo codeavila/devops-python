@@ -63,6 +63,15 @@ sorted_numbers = sorted(unsorted_numbers)
 print(unsorted_numbers)  # Output: [3, 8, 4, 2, 7]
 print(sorted_numbers)  # Output: [2, 3, 4, 7, 8]
 
+# Sort by key
+words = ["banana", "apple", "cherry", "date"]
+words.sort(key=len)
+print(words)  # Output: ['date', 'apple', 'banana', 'cherry']
+## sort by key without modifying the original list
+words = ["banana", "apple", "cherry", "date"]
+words.sort(key=str.lower)
+print(words)  # Output: ['apple', 'banana', 'cherry', 'date']
+
 # User input
 new_fruit = input("Enter a new fruit: ")
 fruits.append(new_fruit)
@@ -168,3 +177,14 @@ print(combined)  # Output: [1, 2, 3, 4, 5, 6]
 # Short way using +=
 numbers += second_numbers
 print(numbers)  # Output: [1, 2, 3, 4, 5, 6]
+
+
+# Count a element occurrences in a list using count()
+elements = ["a", "b", "a", "c", "a", "d"]
+count_a = elements.count("a")
+print(count_a)  # Output: 3
+
+# "find" a element in a list with IN
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)  # Output: True
+print("date" in fruits)  # Output: False

@@ -11,7 +11,7 @@ os.system("ls -l")  # List files in long format (Linux/Mac)
 os.system("dir")  # List files (Windows)
 
 # Execute clean command based on OS
-# For Windows
-os.system("cls")
-# For Linux/Mac
-os.system("clear")
+if os.name == "nt":
+    os.system("cls")  # For Windows
+else:
+    os.system("clear")  # For Linux/Mac
