@@ -1,0 +1,26 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: flask-hello:prod
+    # container_name: flask_hello  # opcional; omítelo si trabajas con varios proyectos
+    ports:
+      - "5000:5000"
+   #environment:
+      # APP_ENV: production
+      # SECRET_KEY: "change_me"
+    #En DEV puedes mantener esto; en PROD, mejor sin volumes
+    volumes:
+      - .:/app:rw
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:5000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

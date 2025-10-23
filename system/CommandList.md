@@ -60,3 +60,24 @@ Ejemplo: `0 2 * * 1 /ruta/al/script.sh` ejecuta el script todos los lunes a las 
 - `unzip [archivo.zip]`: Extrae el contenido de un archivo comprimido en formato zip.
 - `ssh [usuario]@[dirección_ip o dominio]`: Establece una conexión SSH con un servidor remoto.
 - `scp [archivo] [usuario]@[dirección_ip o dominio]:[ruta_destino]`: Copia un archivo a un servidor remoto utilizando SCP.
+
+## Makefile Básico
+Un Makefile es un archivo que contiene un conjunto de directivas utilizadas por la herramienta `make` para automatizar la compilación y construcción de proyectos. Aquí tienes un ejemplo básico de un Makefile:
+
+Ejemplo de proyecto python
+
+```Makefile
+# Definir el intérprete de Python
+PYTHON = python3
+
+# Definir el nombre del archivo principal
+MAIN = main.py
+
+# Regla por defecto
+all: run
+
+# Regla para ejecutar el programa
+run:
+	$(PYTHON) $(MAIN)
+```
+

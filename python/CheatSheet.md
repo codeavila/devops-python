@@ -17,6 +17,18 @@ source nombre_del_entorno/bin/activate  # En Linux/Mac
 nombre_del_entorno\Scripts\activate  # En Windows
 ```
 
+# Python "requirements.txt"
+Un archivo `requirements.txt` es un archivo de texto que lista las dependencias (paquetes) necesarias para un proyecto de Python. Este archivo facilita la instalación de todas las dependencias con una sola línea de comando.
+## Crear archivo requirements.txt
+```bash
+pip install paquete1 paquete2 paquete3
+pip freeze > requirements.txt
+```
+## Nuevo archivo requirements.txt
+```bash
+pip freeze > requirements.txt
+```
+
 # Modo estricto en Visual Studio Code para tipos de datos
 Para habilitar el modo estricto en Visual Studio Code y mejorar la verificación de tipos en Python, puedes configurar las opciones de Pylance en el archivo `settings.json` de tu proyecto. Esto ayuda a detectar errores relacionados con los tipos de datos durante el desarrollo.
 
