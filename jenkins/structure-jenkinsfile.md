@@ -34,3 +34,5 @@ pipeline {
   }
 }
 ```
+<img width="2480" height="3508" alt="DevOps-Python_4_1761325713358" src="https://github.com/user-attachments/assets/f2e50f86-bea4-4ce5-ab00-63b54386f387" />
+
