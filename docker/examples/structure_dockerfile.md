@@ -3,6 +3,7 @@
 FROM python:3.11-slim AS base
 ```
 Por qué: imagen oficial ligera (slim) → menor superficie y tiempo de build. Las Official Images siguen procesos de revisión/seguridad y son buena base. 
+<img width="2480" height="3508" alt="DevOps-Python_1_1761283686555" src="https://github.com/user-attachments/assets/e58be8ff-5b50-4105-b06f-74c5c2e46a64" />
 
 ```
 ENV PYTHONDONTWRITEBYTECODE=1 \
