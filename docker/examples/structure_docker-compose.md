@@ -29,6 +29,7 @@ dockerfile te deja especificar un nombre alterno si no es Dockerfile.
 
 Best practice: mantener el contexto chico (usa .dockerignore) para builds más rápidos. 
 Docker Documentation
+<img width="2480" height="3508" alt="DevOps-Python_3_1761320570248" src="https://github.com/user-attachments/assets/d0d182b9-4cb4-4fb6-9cc9-50595acc10ea" />
 
 ```yaml
     image: flask-hello:prod
