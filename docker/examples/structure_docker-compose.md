@@ -9,6 +9,7 @@ version: "3.9"
 services:
 ```
 Todo lo que corre como contenedor se define aquí como servicios. 
+<img width="2480" height="3508" alt="DevOps-Python_2_1761317101716" src="https://github.com/user-attachments/assets/811a742b-1b19-4576-b553-d6dfd319b5c9" />
 
 
 ```yaml
