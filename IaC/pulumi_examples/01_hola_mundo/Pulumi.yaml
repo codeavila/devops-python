@@ -1,0 +1,5 @@
+name: pulumi-docker-hello
+runtime:
+  name: python
+main: .
+description: Hola mundo con Pulumi y Docker usando Flask.

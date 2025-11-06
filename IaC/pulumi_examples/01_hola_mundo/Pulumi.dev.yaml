@@ -1,0 +1,2 @@
+config:
+  pulumi-docker-hello:hostPort: "5000"
