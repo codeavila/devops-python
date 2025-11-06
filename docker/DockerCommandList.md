@@ -16,3 +16,4 @@ Estos son los comandos dia a dia que utilizo para interactuar con Docker desde l
   - `docker inspect -f '{{.NetworkSettings.IPAddress}}' [nombre_contenedor o ID]`: Obtiene la dirección IP de un contenedor.
 - `docker compose up -d`: Inicia los servicios definidos en un archivo docker-compose.yml en modo desacoplado (detached).
 - `docker compose down`: Detiene y elimina los contenedores, redes y volúmenes definidos en un archivo docker-compose.yml.
+- `docker container rename CONTAINER NEW_NAME`: Renombra un contenedor
