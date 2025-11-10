@@ -3,6 +3,14 @@ Normalmente son estos los que utilizo en mi dia a día, pero hay muchos más dis
 
 ## Comandos Básicos del Sistema
 
+- `getent group [nombre_grupo]`: Consulta la informacion sobre usuarios, grupos,hosts o servicios del sistema.
+  - `getent group docker`: docker:x:998:eric
+```
+docker → nombre del grupo
+x → marcador del campo de contraseña (no se usa aquí)
+998 → ID del grupo (GID)
+eric → miembros del grupo
+```
 - `ls`: Lista los archivos y directorios en el directorio actual.
 - `cd [directorio]`: Cambia el directorio actual al especificado.
 - `pwd`: Muestra la ruta del directorio actual.
